@@ -1,0 +1,21 @@
+.profile-bar{
+    padding: 15px;
+    
+    background: linear-gradient(262deg, #ff7854, #fd267d);
+    a:hover{
+        text-decoration: none;
+    }
+    a.my-profile{
+        font-size: 16px;
+            line-height: 40px;
+    }
+    a.sign-out{
+        font-size: 16px;
+    }
+}
+.nav-tinder-sidebar .nav-link.active{
+    border-bottom: 2px solid #fd267d;
+}
+.profile-thumb{
+    border: 2px solid #fff;
+}

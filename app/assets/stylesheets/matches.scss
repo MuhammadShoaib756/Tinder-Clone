@@ -1,0 +1,17 @@
+.match-title{
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+
+    P{
+        position: absolute;
+        bottom: 15px;
+        left: 12px;
+        margin: 0px;
+        font-weight: bold;
+    }
+}
