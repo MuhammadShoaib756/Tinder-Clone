@@ -26,6 +26,21 @@ class BrowseController <ApplicationController
     def decline
         # user swip left
     end
+
+    def conversation
+        id = params[:id]
+        @profile = Account.find(id)
+        like = Like.where(account_id: current_account.id, liked_account_id:id)
+        @match = like.last if like.size > 0
+
+        if @profile.present?
+            respond_to do |format|
+                format.js {
+                    render "browse/conversation"                    
+                 }
+            end
+        end
+    end
     
     
 end

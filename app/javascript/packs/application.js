@@ -9,6 +9,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require('@fortawesome/fontawesome-free')
+import $ from 'jquery';
+global.$ = jQuery;
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

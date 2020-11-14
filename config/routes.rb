@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'matches', to: "browse#matches"
   post 'approve/:id', to: "browse#approve"
   post 'decline/:id', to: "browse#decline"
+  post 'get/conversation/:id', to: "browse#conversation"
 
 end
